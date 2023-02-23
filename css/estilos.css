@@ -1,0 +1,193 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 600;
+    text-align: center;
+    margin:20px;
+    color: rgb(209, 207, 207);
+}
+
+h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 600;
+    line-height: 34px;
+}
+
+h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 600;
+    line-height: 34px;
+}
+
+dd, dt {
+    line-height: 20px;
+  }
+  
+dt {
+    font-weight: bold;
+    color: #b8edff;
+}
+  
+dd {
+    margin-bottom: 1rem;
+}
+
+#contenedor {
+    width: 100%;
+    background-color: #c2f3ff;
+	display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 0px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+.hr { 
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background:rgb(255, 123, 0); 
+    height: 3px; 
+    margin: 1% 25% 1% 25%; 
+    width: 50%;
+    text-align:center;
+  }
+
+
+#titulo {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+	background-color: rgb(93, 132, 155);
+	padding: 5px;
+    text-align: center;
+
+}
+
+#datospersonales {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row: auto;
+	background-color: rgb(225, 242, 252);
+	padding: 10px;
+    text-align: center;
+    
+}
+#img1 {
+    border-radius: 50%;
+        }
+
+#nombreyapellido {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+#apellido {
+    font-family: 'Raleway', sans-serif;
+    font-size: 3rem;
+    font-weight: 400;
+    color: rgb(66, 85, 148);
+}
+
+#profesion {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+        
+}
+
+.datos {
+    margin-top: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4rem;
+}
+
+.datos a {
+    outline: none;
+    text-decoration: none;
+    color: #000000;
+  }
+
+.datos a:hover {
+    border-bottom: 1px solid;
+    background: #517897;
+    text-decoration: none;
+    color: #ffffff;
+
+}
+  
+#trabajoyestudios {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row: auto;
+    position: initial;
+	background-color: rgb(0, 108, 158);
+	padding: 10px;
+    
+}
+#experiencia {
+    margin-top: 1%;
+    color:white;
+    line-height: 20px;
+    margin-bottom: 2%;
+}
+
+#formacionacademica {
+    color:white;
+    line-height: 20px;
+    margin-top: 1%;
+}
+
+button {
+    color: white;
+    border: 2px solid #0099CC;
+    border-radius: 6px;
+    background-color: #002a4d;
+    width: 350px;
+    height: 60px;
+    font-size: 1.3rem;
+    margin-top: 1%;
+}
+button:active {
+    background: rgb(255, 136, 0);
+    border-color: rgb(155, 155, 155);
+    color: white;
+}
+@media (any-hover:hover) {
+button:hover {
+    background: rgb(255, 136, 0);
+    border-color: rgb(155, 155, 155);
+    color: white;
+}}
+
+.footer {
+    text-align: center;
+    color: #002a4d;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    margin: 2% 5% 2% 5%;
+}
+
+.redessoc {
+    max-width: 24px;
+    max-height: 24px;
+    margin: 1% 2% 1% 2%;
+}
+.redessoc:active {
+    color: #002a4d;
+    opacity: 0.5;
+}
+@media (any-hover:hover) {
+    .redessoc:hover {
+    color: #002a4d;
+    opacity: 0.5;
+}}

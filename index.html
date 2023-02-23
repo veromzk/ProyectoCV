@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Integrador curso Front End - Argentina Programa 4.0 - CV</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png" >
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Proyecto Integrador curso Front End - Argentina Programa 4.0 - CV" />
+    <meta property="og:description" content="Proyecto Integrador de curso Front End Argentina Programa 4.0" />
+    <meta property="og:url" content="https://veromzk.github.io/ProyectoCV/" /> 
+    <meta property="og:image" content="images/preview.png" /> 
+    <link rel="stylesheet" href="css/estilos.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    
+<!--Contenedor general-->
+
+    <div id="contenedor">
+
+        <div id="titulo">
+            <h1>Curriculum Vitae</h1>
+        </div>
+         <!--en este sector va foto de perfil, datos de redes y contacto, perfil y aptitudes-->       
+        <div id="datospersonales"> 
+            <img id="img1" src="images/foto-perfil-bco.jpg" alt="Foto portada de mujer de CV">
+            <div id="nombreyapellido">
+            <p>Jennie</p>
+            <p id="apellido">RODRIGUEZ</p> 
+            </div>
+            <div id="profesion">
+            <p>Diseñadora Gráfica</p>
+            </div>   
+            <div class="hr"> </div>
+
+            <div id="redessociales">
+              <span> <a title="Facebook" href="https://www.facebook.com/Jennni" target="_blank"><img class="redessoc" src="images/fb.png" alt="Facebook"></a>
+                     <a title="Instagram" href="https://www.instagram.com/Jenni/" target="_blank"><img class="redessoc" src="images/instagram.png" alt="Instagram"></a>
+                     <a title="Twitter" href="https://twitter.com/Jenni" target="_blank"><img class="redessoc" src="images/twter.png" alt="Twitter"></a>
+              </span>  
+            </div>
+
+            <div class="datos">
+                <p>
+                <h2>Contacto</h2> </p>
+                <p><a href="mailto:jennierodriguez@prueba.com">• Email: jennierodriguez@prueba.com</a></p>
+                <p>• Celular: +123-456-7890 </p>
+                <p>• País de residencia: España </p>
+               
+               <div class="hr"> </div>
+               <p>
+                <h2>Perfil</h2>
+                Soy Diseñadora Gráfica con más de 8 años <br>
+                de experiencia y un enfoque en la marca,<br>
+                edición de video, fotografía, tipografía y animación.<br>
+               </p>
+               <div class="hr"> </div>
+               <p>
+                <h2>Aptitudes</h2>
+                • Fotografía<br>
+                • Videografía<br>
+                • Diseño gráfico<br>
+                • Gestión de proyectos<br>
+                • Redacción<br>
+               </p>
+
+            </div>
+        </div>
+
+        <!--en este sector va formacion academica y exp laboral-->  
+        
+        <div id="trabajoyestudios">
+            <div id="formacionacademica">
+            <h2>Formación Académica</h2> 
+            <dl>
+                <dt>• Secundario:</dt>
+                <dd>Bachiller Comercial Instituto San Antonio</dd>
+                <dt>• Universitario:</dt>
+                <dd>Diseño Gráfico en Universidad de Salamanca</dd>
+                <dt>• Curso de especialización:</dt>
+                <dd>Fotografia en Instituto Nacional</dd>
+                <dt>• Curso de especialización:</dt>
+                <dd>Edición de Video en Instituto Las Vertientes</dd>
+            </dl>
+            </div>       
+
+            <button onclick="mostrarEx()">Experiencia Laboral</button>
+    
+            <div id="experiencia" style="display: none;">
+            <h2>Studio Shodw</h2>    
+            <h3>Septiembre 2016 - presente</h3>
+            <p>Encargado de hacer gráficos para diseños offline. <br>
+               Publicaciones en redes sociales.<br>
+               Edición de fotos para clientes y revistas.<br>
+            </p>
+            </div>
+
+            <script src="js/mostrar.js"></script>
+            
+            <script src="js/cambioimagen.js"></script>
+        
+         
+       
+        
+        </div>
+        <span class="footer">Proyecto Integrador Argentina Programa 4.0 // Primeros pasos del desarrollo frontend Academia Ticmas // Verónica Muraszko </span>
+
+    </div>
+    
+    
+    <!--Uso de JSON requiere cambios en el css.
+            <script>
+                const estudios = '{"secundario":"Bachiller Comercial en San Pio X","universitario":"Diseño Gráfico en Universidad de Salamanca", "curso1":"Fotografia en Instituto Nacional", "curso2":"Edición de Video en Instituto Las Vertientes"}';
+                const obj = JSON.parse(estudios);
+                console.log(obj);
+                document.getElementById("estudios").innerHTML =
+                "• Secundario: "+obj.secundario+
+                "• Universitario: "+obj.universitario+
+                "• Curso especialización: "+obj.curso1+
+                "• Curso especialización: "+obj.curso2;     
+        
+            </script>-->
+</body>
+</html>
